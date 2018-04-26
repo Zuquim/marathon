@@ -1,8 +1,5 @@
 # http://codeforces.com/problemset/problem/23/A
-# s = input()
-s = 'abrakadabra'
-# s = 'ababa'
-# s = 'zzz'
+s = input()
 leng = 0
 for i in range(len(s)):
     for j in range(i + 1, len(s) + 1):
@@ -13,5 +10,4 @@ for i in range(len(s)):
             for k in range(1, len(sub)):
                 if s[i - k:j - k] == sub and len(sub) > leng:
                     leng = len(sub)
-
 print(leng)
